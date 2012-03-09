@@ -507,7 +507,8 @@ How do we get the headers for the CSV? There are a few options, but the easiest 
   end
 ```
 
-How do we figure out if it's the first line? The CSV object, stored in `@file`, has a `lineno` method that tells you what line it's on. Write an `if` condition that checks if `@file.lineno` is equal to zero. If it is, output the headers with `output << line.headers`.
+How do we figure out if it's the first line? The CSV object, stored in `@file`, has a `
+` method that tells you what line it's on. Write an `if` condition that checks if `@file.lineno` is equal to two. The reason that we use two is that the file starts at line 1, so line 2 is the first line of data. If it is, output the headers with `output << line.headers`.
 
 ### Step 2: In-Place Phone Number and Zipcode Cleaning
 
